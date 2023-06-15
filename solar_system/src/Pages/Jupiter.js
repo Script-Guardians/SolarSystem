@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import './Jupiter.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./Jupiter.css";
 
 export const Jupiter = () => {
   const [bodies, setBodies] = useState(null);
@@ -8,21 +8,21 @@ export const Jupiter = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost/bodies/Jupiter')
-      .then(response => {
+      .get("http://localhost/bodies/Jupiter")
+      .then((response) => {
         setBodies(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
       });
 
     axios
-      .get('http://localhost/planets?name=Jupiter')
-      .then(response => {
+      .get("http://localhost/planets?name=Jupiter")
+      .then((response) => {
         setPlanets(response.data);
         console.log(response.data);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error(error);
       });
   }, []);
@@ -34,10 +34,12 @@ export const Jupiter = () => {
   return (
     <div className="jupiter">
       <h1 className="title">{planets[0].name}</h1>
-      <p>Jupiter is more than twice as massive than the other planets of our solar system combined. <br></br>The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.</p>
+
       <p className="read-more">READ MORE</p>
       <p className="property">Mass: {planets[0].mass}</p>
-      <p className="property">Distance (Light Years): {planets[0].distance_light_year}</p>
+      <p className="property">
+        Distance (Light Years): {planets[0].distance_light_year}
+      </p>
       <p className="property">Temperature: {planets[0].temperature}</p>
       <p className="property">Gravity: {bodies.gravity}</p>
       <p className="property">Density: {bodies.density}</p>
@@ -45,4 +47,4 @@ export const Jupiter = () => {
     </div>
     //comment
   );
-}
+};
