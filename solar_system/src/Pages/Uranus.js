@@ -45,6 +45,6 @@ export const Uranus = () => {
       <p className="read-more" ><a href="https://solarsystem.nasa.gov/planets/uranus/overview/">READ MORE</a></p>
 
     </div>
-    //comment
+    //adding links
   );
 }
