@@ -1,10 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Nav } from './Nav';
+import SolarSystem from './Pages/SolarSystem'
 import { Mercury } from './Pages/Mercury'
-import { Mars } from './Pages/Mars'
-import { Venus } from './Pages/Venus';
+import { Venus } from './Pages/Venus'
 import { Earth } from './Pages/Earth';
+import { Mars } from './Pages/Mars'
+import { Jupiter } from './Pages/Jupiter';
+import { Saturn } from './Pages/Saturn';
+import { Uranus } from './Pages/Uranus';
+import { Neptune } from './Pages/Neptune'
 
 
 const App = () => {
