@@ -1,5 +1,4 @@
 import React from 'react';
-import SolarSystem from './SolarSystem';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Nav } from './Nav';
 import { Mercury } from './Pages/Mercury'
@@ -12,7 +11,7 @@ const App = () => {
         <BrowserRouter>
         <Nav />
           <Routes>
-            <Route path= "/" exact={true} element={<SolarSystem />}/>
+            {/* <Route path= "/" exact={true} element={<SolarSystem />}/> */}
             <Route path= "/mars" exact={true} element={<Mars />}/>
             <Route path= "/mercury" exact={true} element={<Mercury />}/>
           </Routes> 

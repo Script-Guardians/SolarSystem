@@ -1,10 +1,10 @@
 import React from 'react'
-import { MercuryInfo } from '../MercuryInfo'
+// import { MercuryInfo } from '../MercuryInfo'
 
 export const Mercury = () => {
   return (
     <div>
-        <MercuryInfo />
+        {/* <MercuryInfo /> */}
     </div>
   )
 }
