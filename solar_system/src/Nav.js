@@ -7,6 +7,8 @@ export const Nav = () => {
       <Link to="/">Solar System</Link>{' '}
       <Link to="/mars">Mars</Link>{' '}
       <Link to="/mercury">Mercury</Link>{' '}
+      <Link to="/venus">Venus</Link>{' '}
+      <Link to="/earth">Earth</Link>{' '}
     </div>
   )
 }
