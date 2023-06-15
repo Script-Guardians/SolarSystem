@@ -100,7 +100,7 @@
     background-image: url(/public/mars.png);
 
     background-size: cover;
-    <Link to="/mars">Mars</Link>{' '}
+    
   }
   .jupiter {
     position: absolute;
