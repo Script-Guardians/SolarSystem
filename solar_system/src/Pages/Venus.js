@@ -39,7 +39,7 @@ export const Venus = () => {
         atmosphere traps heat in a runaway greenhouse effect, <br></br>making it
         the hottest planet in our solar system.
       </p>
-      <p className="read-more">READ MORE</p>
+      
       <p className="property">Mass: {planets[0].mass}</p>
       <p className="property">
         Distance (Light Years): {planets[0].distance_light_year}
@@ -48,6 +48,8 @@ export const Venus = () => {
       <p className="property">Gravity: {bodies.gravity}</p>
       <p className="property">Density: {bodies.density}</p>
       <p className="property">Discovery Date: {bodies.discoveryDate}</p>
+      <p className="read-more" ><a href="https://solarsystem.nasa.gov/planets/venus/overview/">READ MORE</a></p>
+
     </div>
   );
 };
