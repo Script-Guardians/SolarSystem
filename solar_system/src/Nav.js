@@ -10,9 +10,9 @@ export const Nav = () => {
       <Link to="/earth">Earth</Link>{' '}
       <Link to="/mars">Mars</Link>{' '}
       <Link to="/jupiter">Jupiter</Link>{' '}
-      <Link to="/saturn">Saturn</Link>{' '}
+      <Link to="/uranus">Uranus</Link>{' '}
       <Link to="/neptune">Neptune</Link>{' '}
-
+      <Link to="/saturn">Saturn</Link>{' '}
     </div>
   )
 }

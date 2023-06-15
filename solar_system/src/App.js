@@ -11,6 +11,7 @@ import { Neptune } from './Pages/Neptune';
 import SolarSystem from './Pages/SolarSystem';
 import './App.css';
 
+
 const App = () => {
   return (
     <div className="app">
@@ -25,6 +26,7 @@ const App = () => {
             <Route path= "/jupiter" exact={true} element={<Jupiter />}/>
             <Route path= "/saturn" exact={true} element={<Saturn />}/>
             <Route path= "/neptune" exact={true} element={<Neptune />}/>
+            <Route path= "/uranus" exact={true} element={<Uranus/>}/>
           </Routes> 
         </BrowserRouter> 
     </div>
