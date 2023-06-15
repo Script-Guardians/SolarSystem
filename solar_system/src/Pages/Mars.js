@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import './Mars.css';
 
 export const Mars = () => {
   const [bodies, setBodies] = useState(null);

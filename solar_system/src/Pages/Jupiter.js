@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Mercury.css';
+import './Jupiter.css';
 
-export const Mercury = () => {
+export const Jupiter = () => {
   const [bodies, setBodies] = useState(null);
   const [planets, setPlanets] = useState(null);
 
   useEffect(() => {
     axios
-      .get('http://localhost/bodies/Mercury')
+      .get('http://localhost/bodies/Jupiter')
       .then(response => {
         setBodies(response.data);
       })
@@ -17,7 +17,7 @@ export const Mercury = () => {
       });
 
     axios
-      .get('http://localhost/planets?name=Mercury')
+      .get('http://localhost/planets?name=Jupiter')
       .then(response => {
         setPlanets(response.data);
         console.log(response.data);
@@ -32,9 +32,9 @@ export const Mercury = () => {
   }
 
   return (
-    <div className="box">
+    <div className="jupiter">
       <h1 className="title">{planets[0].name}</h1>
-      <p>Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet,<br></br> zipping around the Sun every 88 Earth days.</p>
+      <p>Earth—our home planet—is the only place we know of so far that’s inhabited by living things.<br></br> It's also the only planet in our solar system with liquid water on the surface.</p>
       <p className="read-more">READ MORE</p>
       <p className="property">Mass: {planets[0].mass}</p>
       <p className="property">Distance (Light Years): {planets[0].distance_light_year}</p>
