@@ -15,7 +15,7 @@ const App = () => {
             <Route path= "/" exact={true} element={<SolarSystem />}/>
             <Route path= "/mars" exact={true} element={<Mars />}/>
             <Route path= "/mercury" exact={true} element={<Mercury />}/>
-          </Routes>
+          </Routes> 
         </BrowserRouter>
     </div>
   );
