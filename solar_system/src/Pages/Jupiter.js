@@ -34,7 +34,7 @@ export const Jupiter = () => {
   return (
     <div className="jupiter">
       <h1 className="title">{planets[0].name}</h1>
-      <p>Earth—our home planet—is the only place we know of so far that’s inhabited by living things.<br></br> It's also the only planet in our solar system with liquid water on the surface.</p>
+      <p>Jupiter is more than twice as massive than the other planets of our solar system combined. <br></br>The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.</p>
       <p className="read-more">READ MORE</p>
       <p className="property">Mass: {planets[0].mass}</p>
       <p className="property">Distance (Light Years): {planets[0].distance_light_year}</p>
