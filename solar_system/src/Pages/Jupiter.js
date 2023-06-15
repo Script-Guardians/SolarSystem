@@ -32,7 +32,7 @@ export const Jupiter = () => {
   }
 
   return (
-    <div className="jupiter">
+    <div className="jupiter-page">
       <h1 className="title">{planets[0].name}</h1>
 
       <p className="read-more">READ MORE</p>
