@@ -32,7 +32,7 @@ export const Mars = () => {
   }
 
   return (
-    <div className="container">
+    <div className="mars-page">
       <h1 className="title">{planets[0].name}</h1>
       <p>Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.</p>
       <p className="read-more">READ MORE</p>

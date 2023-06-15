@@ -3,10 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Nav } from './Nav';
 import { Mercury } from './Pages/Mercury'
 import { Mars } from './Pages/Mars'
-import './App.css';
-import SolarSystem from './Pages/SolarSystem';
 import { Venus } from './Pages/Venus';
 import { Earth } from './Pages/Earth';
+import SolarSystem from './SolarSystem';
+import './App.css';
+
+
+
 
 const App = () => {
   return (
@@ -21,6 +24,7 @@ const App = () => {
             <Route path= "/earth" exact={true} element={<Earth/>}/>
           </Routes> 
         </BrowserRouter> 
+      
     </div>
   );
 };

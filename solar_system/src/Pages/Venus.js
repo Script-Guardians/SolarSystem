@@ -32,7 +32,7 @@ export const Venus = () => {
   }
 
   return (
-    <div className="venus">
+    <div className="venus-page">
       <h1 className="title">{planets[0].name}</h1>
       <p>Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, <br></br>making it the hottest planet in our solar system.</p>
       <p className="read-more">READ MORE</p>
