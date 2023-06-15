@@ -9,6 +9,10 @@ export const Nav = () => {
       <Link to="/mercury">Mercury</Link>{' '}
       <Link to="/venus">Venus</Link>{' '}
       <Link to="/earth">Earth</Link>{' '}
+      <Link to="/jupiter">Jupiter</Link>{' '}
+      <Link to="/uranus">Uranus</Link>{' '}
+      <Link to="/neptune">Neptune</Link>{' '}
+      <Link to="/saturn">Saturn</Link>{' '}
     </div>
   )
 }
