@@ -1,7 +1,7 @@
 const express = require('express')
 const request = require('request')
 const axios = require('axios')
-// const cors = require('cors')
+const cors = require('cors')
 
 
 const PORT = 80
@@ -9,13 +9,20 @@ const app = express()
 
 
 // Middleware...
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+// Serve the built React app
+app.use(express.static('build'));
 
-// Endpoints
+// Handle requests to the root URL
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/build/index.html');
+});
 
+
+// API Endpoints
 app.get('/planets', (req, res) => {
   const name = req.query.name;
   const options = {
@@ -53,7 +60,6 @@ app.get('/bodies/:id', async (req, res) => {
     res.status(500).json({ message: 'Error retrieving data' });
   }
 });
-
 
 
 app.listen(PORT, () => {
