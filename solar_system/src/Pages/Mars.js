@@ -43,5 +43,6 @@ export const Mars = () => {
       <p className="property">Density: {bodies.density}</p>
       <p className="property">Discovery Date: {bodies.discoveryDate}</p>
     </div>
+    //comment
   );
 }
