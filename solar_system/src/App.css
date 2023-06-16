@@ -1,16 +1,18 @@
 html {
-  background-image: url(./images/stars.jpg);
+  background-image: url(./images/cosmos.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   text-align:center;
+  align-content: center;
   height: 100vh;
 }
 
 .app {
   display: flex;
-  padding:0;
   flex-direction: row;
+  flex-direction: row-reverse;
+
 }
 
 .content {
@@ -23,7 +25,7 @@ html {
   flex: 1;
   max-width: 33%;
   align-items: center;
-
+  
 }
 
 .solarSystem-page{
@@ -41,7 +43,6 @@ html {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.65);
-  padding: 20px;
+  padding: 0.8rem;
   z-index: 999;
-
 }
