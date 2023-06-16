@@ -9,8 +9,8 @@ img {
 .earth-page {
   background: rgba(0, 0, 0, 0.65);
   color: white;
-  margin: 0%;
   width: fit-content;
+  margin-top: 3rem;
 }
 
 .loading {
