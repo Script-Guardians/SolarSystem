@@ -8,8 +8,11 @@ import { Jupiter } from './Pages/Jupiter';
 import { Saturn } from './Pages/Saturn';
 import { Uranus } from './Pages/Uranus';
 import { Neptune } from './Pages/Neptune';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import { Nav } from './Nav';
+import {Header} from './Header';
+import { Footer } from './Footer';
 import './App.css'
 
 
@@ -17,6 +20,7 @@ const App = () => {
   return (
     <div className="app">
         <BrowserRouter>
+        <Header />
         <Nav />
           <Routes>
             <Route path= "/" exact={true} element={<SolarSystem />}/>
@@ -29,6 +33,7 @@ const App = () => {
             <Route path= "/uranus" exact={true} element={<Uranus/>}/>
             <Route path= "/neptune" exact={true} element={<Neptune />}/>
           </Routes> 
+          <Footer />
         </BrowserRouter> 
       
     </div>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 export const Header = () => {
   return (
-    <div>
-      <h1>NASA WAS HERE</h1>
-    </div>
-  )
-}
+    <header className="header bg-transparent">
+      <h1 className="header-title">Nasa Was Here</h1>
+    </header>
+  );
+};

@@ -1,4 +1,4 @@
-.Header {
+.header {
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -6,5 +6,10 @@
   align-items: baseline;
   padding: 1em;
   margin-bottom: 2em;
+  background-color: rgba(52, 58, 64, 0.5);
+}
+
+.header-title {
   color: #ffffff;
+  font-family: 'Spartan', sans-serif;
 }
