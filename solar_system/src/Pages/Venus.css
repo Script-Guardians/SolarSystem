@@ -1,5 +1,26 @@
-.venus-page{
-    background-image: url(https://nssdc.gsfc.nasa.gov/planetary/image/venus.jpg);
-    color: white;
-    height:900px ;
-    }
+img {
+  margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  opacity: .9;
+  padding: 1rem;
+}
+
+.venus-page {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  margin: 0%;
+  width: fit-content;
+}
+
+.loading {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.venus-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
