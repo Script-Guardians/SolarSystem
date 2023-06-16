@@ -21,7 +21,7 @@
   padding: 20%;
 }
 
-  .planet:after {
+    .planet:after {
   content: '';
   border-radius: 100%;
   position: absolute;
@@ -30,7 +30,7 @@
   position: absolute;
   width: 70%;
   height: 70%;
-  background-image: url(../images/sun.png);
+  background-image: url(/public/sun.png); 
 
   background-size: cover;
   border-radius: 50%;
@@ -48,7 +48,7 @@
   width: 1.5rem;
   height: 1.5rem;
   top: -10px;
-  background-image: url(../images/mercury.png);
+  background-image: url(/public/mercury.png);
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@
   width: 1.5rem;
   height: 1.5rem;
   top: -14px;
-  background-image: url(../images/venus.png);
+  background-image: url(/public/venus.png);
 
   background-size: cover;
 }
@@ -81,7 +81,7 @@
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(../images/earth.png);
+  background-image: url(/public/earth.png);
 
   background-size: cover;
 }
@@ -97,9 +97,10 @@
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(../images/mars.png);
+  background-image: url(/public/mars.png);
 
   background-size: cover;
+  
 }
 .jupiter {
   position: absolute;
@@ -112,7 +113,7 @@
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(../images/jupiter.png);
+  background-image: url(/public/jupiter.png);
 
   background-size: cover;
 }
@@ -128,7 +129,7 @@
   width: 1.3rem;
   height: 1.3rem;
   top: -10px;
-  background-image: url(../images/saturn.png);
+  background-image: url(/public/saturn.png);
 
   background-size: cover;
 }
@@ -143,7 +144,7 @@ animation-duration: 18s;
 width: 2rem;
 height: 2rem;
 top: -15px;
-background-image: url(../images/uranus.png);
+background-image: url(/public/uranus.png);
 
 background-size: cover;
 }
@@ -159,7 +160,7 @@ background-size: cover;
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(../images/neptune.png);
+  /* background-image: url(/public/neptune.png); */
 
   background-size: cover;
 }
@@ -171,4 +172,29 @@ background-size: cover;
   to {
     transform: rotate(360deg);
   }
+}
+
+.planet-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:  rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.planet-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: beige;
+  
+}
+
+.planet-info p {
+  font-size: 16px;
+  color: whitesmoke;
 }
