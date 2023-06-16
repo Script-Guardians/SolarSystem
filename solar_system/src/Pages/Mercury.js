@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Mercury.css";
+
 
 export const Mercury = () => {
   const [bodies, setBodies] = useState(null);
   const [planets, setPlanets] = useState(null);
+  const { id } = useParams();
 
   useEffect(() => {
     axios
@@ -25,7 +28,7 @@ export const Mercury = () => {
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [id]);
 
   if (!bodies || !planets) {
     return <div className="loading">Loading...</div>; // Apply loading style
