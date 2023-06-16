@@ -1,7 +1,9 @@
 import React from 'react';
 import './Footer.css';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { Nav } from './Nav';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min.js';
+
 
 export const Footer = () => {
   return (
