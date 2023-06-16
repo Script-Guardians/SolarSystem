@@ -8,7 +8,40 @@ html {
 }
 
 .app {
-  text-align:center;
-  margin:auto;
+  display: flex;
   padding:0;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.popoutWindow {
+  flex: 1;
+  max-width: 33%;
+  align-items: center;
+
+}
+
+.solarSystem-page{
+  display: flex;
+  align-items: center;
+  flex: 2;
+  max-width: 66%;
+  height: 100vh;
+}
+
+.nav-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 20px;
+  z-index: 999;
+
 }

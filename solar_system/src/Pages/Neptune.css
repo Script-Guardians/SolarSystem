@@ -1,7 +1,26 @@
-.neptune-page{
-  
-        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/640px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg);
-        color: white;
-        height:900px ;
-   
+img {
+  margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  opacity: .9;
+  padding: 1rem;
+}
+
+.neptune-page {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  margin: 0%;
+  width: fit-content;
+}
+
+.loading {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.neptune-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

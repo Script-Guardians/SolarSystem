@@ -1,0 +1,29 @@
+.popout-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.popout-window.open {
+  transform: translateX(0);
+}
+
+.popout-window-content {
+  padding: 20px;
+}
+
+.popout-window-content a {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.popout-window-content a:hover {
+  text-decoration: underline;
+}

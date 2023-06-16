@@ -33,23 +33,34 @@ export const Earth = () => {
 
   return (
     <div className="earth-page">
-      <h1 className="title">{planets[0].name}</h1>
-      <p>
-        Earth—our home planet—is the only place we know of so far that’s
-        inhabited by living things.<br></br> It's also the only planet in our
-        solar system with liquid water on the surface.
-      </p>
-      
-      <p className="property">Mass: {planets[0].mass}</p>
-      <p className="property">
-        Distance (Light Years): {planets[0].distance_light_year}
-      </p>
-      <p className="property">Temperature: {planets[0].temperature}</p>
-      <p className="property">Gravity: {bodies.gravity}</p>
-      <p className="property">Density: {bodies.density}</p>
-      <p className="property">Discovery Date: {bodies.discoveryDate}</p>
-      <p className="read-more" ><a href="https://solarsystem.nasa.gov/planets/earth/overview/">READ MORE</a></p>
+      <img
+        src="https://images.unsplash.com/photo-1639653279211-09958a51fb00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+        className="earth-image"
+        alt="earth-logo"
+      />
+      <div className="earth-info">
+        <h1 className="title">{planets[0].name}</h1>
+        <p>
+          Earth—our home planet—is the only place we know of so far <br />
+          that's inhabited by living things. It's also the only planet in our{" "}
+          <br />
+          solar system with liquid water on the surface.
+        </p>
+
+        <p className="property">Mass: {planets[0].mass}</p>
+        <p className="property">
+          Distance (Light Years): {planets[0].distance_light_year}
+        </p>
+        <p className="property">Temperature: {planets[0].temperature}</p>
+        <p className="property">Gravity: {bodies.gravity}</p>
+        <p className="property">Density: {bodies.density}</p>
+        <p className="property">Discovery Date: {bodies.discoveryDate}</p>
+        <p className="read-more">
+          <a href="https://solarsystem.nasa.gov/planets/earth/overview/">
+            READ MORE
+          </a>
+        </p>
+      </div>
     </div>
-    //comment
   );
 };
