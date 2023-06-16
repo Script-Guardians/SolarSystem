@@ -32,7 +32,7 @@ export const Earth = () => {
   }
 
   return (
-    <div className="earth">
+    <div className="earth-page">
       <h1 className="title">{planets[0].name}</h1>
       <p>Earth—our home planet—is the only place we know of so far that’s inhabited by living things.<br></br> It's also the only planet in our solar system with liquid water on the surface.</p>
       <p className="read-more">READ MORE</p>

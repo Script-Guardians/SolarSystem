@@ -32,7 +32,7 @@ export const Mercury = () => {
   }
 
   return (
-    <div className="box">
+    <div className="mercury-page">
       <h1 className="title">{planets[0].name}</h1>
       <p>Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet,<br></br> zipping around the Sun every 88 Earth days.</p>
       <p className="read-more">READ MORE</p>

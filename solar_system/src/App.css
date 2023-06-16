@@ -1,9 +1,11 @@
-.app {
+ .app {
   background-image: url(../public/stary.jpg);
-  background-size: cover; /* or "contain" depending on what you want */
+  background-size: cover; 
   background-position: center center;
   background-repeat: no-repeat;
   text-align:center;
   margin:auto;
-  padding:0;
-}
+  padding:0; 
+
+ }  
+

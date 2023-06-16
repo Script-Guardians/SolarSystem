@@ -1,103 +1,182 @@
-
-
-
 .solar-system {
-    width: 20rem;
-    height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-  }
-  
-  .planet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid #dedede;
-    animation-name: rotatePlanet;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 15s;
-  }
-  
-  .planet:after {
-    content: '';
-    border-radius: 50%;
-    position: absolute;
-  }
-  
-  .planet1 {
-    width: 100%;
-    height: 100%;
-    animation-duration: 25s;
-  }
-  
-  .planet1:after {
-    width: 1.8rem;
-    height: 1.8rem;
-    top: -15px;
-    background: #8a8380;
-  }
-  
-  .planet2 {
-    width: 75%;
-    height: 75%;
-    animation-duration: 18s;
-  }
-  
-  .planet2:after {
-    width: 1.3rem;
-    height: 1.3rem;
-    top: -10px;
-    background: #ab711d;
-  }
-  
-  .planet3 {
-    width: 77%;
-    height: 77%;
-    animation-duration: 13s;
-  }
-  
-  .planet3:after {
-    width: 0.9rem;
-    height: 0.9rem;
-    top: -8px;
-    background: #ffddab;
-  }
-  
-  .planet4 {
-    width: 55%;
-    height: 55%;
-    animation-duration: 9s;
-  }
-  .planet4:after {
-    width: 0.6rem;
-    height: 0.6rem;
-    top: -6px;
-    background: #82c8ff;
-  }
+  padding: 5%;
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+}
 
-  .sun {
-    width: 200px; 
-    height: 200px; 
-    background: #ffc107;
-    border-radius: 50%;
-    transform: scale(2); 
-  }
+.planet {
   
-  .sun::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%; 
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid #dedede;
+  animation-name: rotatePlanet;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  width: 40%;
+  height: 40%;
+  padding: 20%;
+}
 
-  @keyframes rotatePlanet {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+    .planet:after {
+  content: '';
+  border-radius: 100%;
+  position: absolute;
+}
+.sun {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background-image: url(/public/sun.png); 
+
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+ .mercury {
+  position: absolute;
+  padding: 15%;
+  width: 50%;
+  height: 50%;
+  animation-duration: 250s;
+}
+.mercury:after {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -10px;
+  background-image: url(/public/mercury.png);
+  background-size: cover;
+}
+
+.venus {
+  position: absolute;
+  padding: 10%;
+  width: 55%;
+  height: 55%;
+  animation-duration: 37s;
+}
+
+.venus:after {
+  width: 1.5rem;
+  height: 1.5rem;
+  top: -14px;
+  background-image: url(/public/venus.png);
+
+  background-size: cover;
+}
+
+.earth {
+  position: absolute;
+  padding: 10%;
+  width: 60%;
+  height: 60%;
+  animation-duration: 35s;
+}
+
+.earth:after {
+  width: 2rem;
+  height: 2rem;
+  top: -15px;
+  background-image: url(/public/earth.png);
+
+  background-size: cover;
+}
+
+.mars {
+  position: absolute;
+  padding: 10%;
+  width: 65%;
+  height: 65%;
+  animation-duration: 30s;
+}
+.mars:after {
+  width: 2rem;
+  height: 2rem;
+  top: -15px;
+  background-image: url(/public/mars.png);
+
+  background-size: cover;
   
+}
+.jupiter {
+  position: absolute;
+  padding: 7%;
+  width: 70%;
+  height: 70%;
+  animation-duration: 27s;
+}
+.jupiter:after {
+  width: 2rem;
+  height: 2rem;
+  top: -15px;
+  background-image: url(/public/jupiter.png);
+
+  background-size: cover;
+}
+
+.saturn{
+  position: absolute;
+  padding: 7%;
+  width: 75%;
+  height: 75%;
+  animation-duration: 22s;
+}
+.saturn:after {
+  width: 1.3rem;
+  height: 1.3rem;
+  top: -10px;
+  background-image: url(/public/saturn.png);
+
+  background-size: cover;
+}
+
+
+
+.uranus{
+position: absolute;
+padding: 3%;
+width: 75%;
+height: 75%;
+animation-duration: 18s;
+}
+.uranus:after {
+width: 2rem;
+height: 2rem;
+top: -15px;
+background-image: url(/public/uranus.png);
+
+background-size: cover;
+}
+.neptune{
+  
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  animation-duration: 40s;
+}
+
+.neptune:after {
+  width: 2rem;
+  height: 2rem;
+  top: -15px;
+  background-image: url(/public/neptune.png);
+
+  background-size: cover;
+}
+
+@keyframes rotatePlanet {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* homework */
+

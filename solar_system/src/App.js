@@ -12,6 +12,7 @@ import { Uranus } from './Pages/Uranus';
 import { Neptune } from './Pages/Neptune';
 import { Saturn } from './Pages/Saturn';
 
+
 const App = () => {
   return (
     <div className="app">

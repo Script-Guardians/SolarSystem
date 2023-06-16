@@ -32,7 +32,7 @@ export const Jupiter = () => {
   }
 
   return (
-    <div className="jupiter">
+    <div className="jupiter-page">
       <h1 className="title">{planets[0].name}</h1>
       <p>Jupiter is more than twice as massive than the other planets of our solar system combined. <br></br>The giant planet's Great Red Spot is a centuries-old storm bigger than Earth.</p>
       <p className="read-more">READ MORE</p>
