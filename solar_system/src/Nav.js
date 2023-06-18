@@ -1,18 +1,35 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Nav.css';
+import { PopoutWindow } from './PopoutWindow';
 
-export const Nav = () => {
+export const Nav = ({ pages }) => {
+  const [isPopoutOpen, setIsPopoutOpen] = useState(false);
+
+  const handlePopoutToggle = () => {
+    setIsPopoutOpen(!isPopoutOpen);
+  };
+
+  const handleClosePopout = () => {
+    setIsPopoutOpen(false);
+  };
+
   return (
-    <div>
-      <Link to="/">Solar System</Link>{' '}
-      <Link to="/venus">Venus</Link>{' '}
-      <Link to="/mercury">Mercury</Link>{' '}
-      <Link to="/earth">Earth</Link>{' '}
-      <Link to="/mars">Mars</Link>{' '}
-      <Link to="/jupiter">Jupiter</Link>{' '}
-      <Link to="/saturn">Saturn</Link>{' '}
-      <Link to="/uranus">Uranus</Link>{' '}
-      <Link to="/neptune">Neptune</Link>{' '}
+    <div className="nav-container">
+      <div className="nav-links">
+        {pages.map((page) => (
+          <Link key={page.path} to={page.path}>
+            {page.name}
+          </Link>
+        ))}
+      </div>
+      <button className="popout-toggle" onClick={handlePopoutToggle}>
+        Toggle Popout
+      </button>
+      {isPopoutOpen && (
+        <PopoutWindow isOpen={isPopoutOpen} onClose={handleClosePopout} pages={pages} />
+      )}
     </div>
-  )
-}
+  );
+};
+

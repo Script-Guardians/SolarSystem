@@ -1,7 +1,26 @@
-.saturn-page{
-  
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/hubble_saturnspokes_stsci-01gph6dah7k11cg5pcvq4b9fq5.png);
-    color: white;
-    height:900px ;
+img {
+  margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  opacity: .9;
+  padding: 1rem;
+}
 
+.saturn-page {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.loading {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.saturn-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

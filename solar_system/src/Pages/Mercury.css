@@ -1,5 +1,26 @@
-.mecury-page{
-    background-image: url(https://www.nhm.ac.uk/content/dam/nhmwww/discover/mercury-facts/mercury-factfile-v2-full-width.jpg.thumb.1160.1160.jpg);
-    color: white;
-    height:900px ;
-    }
+img {
+  margin: 2rem;
+  width: 22.5rem;
+  height: 25rem;
+  opacity: .9;
+  padding: 1rem;
+}
+
+.mercury-page {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.loading {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.mercury-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

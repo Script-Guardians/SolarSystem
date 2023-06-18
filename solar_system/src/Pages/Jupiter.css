@@ -1,5 +1,26 @@
-.jupiter-page{
-    background-image: url(https://images.foxtv.com/static.fox13news.com/www.fox13news.com/content/uploads/2022/09/764/432/jupiter.jpg?ve=1&tl=1);
-    color: white;
-    height:900px ;
-    }
+img {
+  margin: 2rem;
+  width: 25rem;
+  height: 25rem;
+  opacity: .9;
+  padding: 1rem;
+}
+
+.jupiter-page {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  width: fit-content;
+  margin-top: 3rem;
+}
+
+.loading {
+  color: aliceblue;
+  font-size: larger;
+}
+
+.jupiter-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
