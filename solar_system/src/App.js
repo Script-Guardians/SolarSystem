@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SolarSystem from './Pages/SolarSystem';
 import { Mercury } from './Pages/Mercury';
@@ -17,6 +17,18 @@ import './App.css';
 import { PopoutWindow } from './PopoutWindow';
 
 const App = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   const pages = [
     { name: 'Solar System', path: '/' },
     { name: 'Venus', path: '/venus' },
@@ -31,6 +43,7 @@ const App = () => {
 
   const [isPopoutOpen, setPopoutOpen] = useState(false);
   const [selectedPage, setSelectedPage] = useState(null);
+
 
   const handleLinkClick = (path) => {
     setSelectedPage(path);
@@ -74,8 +87,13 @@ const App = () => {
           <Route path="/neptune" element={<Neptune />} />
         </Routes>
       </div>
+
       <Footer />
+
+      <div className="clock">{currentTime.toLocaleTimeString()}</div> 
+
     </Router>
+    
   );
 };
 

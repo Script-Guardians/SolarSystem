@@ -59,5 +59,6 @@ export const Uranus = () => {
         </a>
       </p>
     </div>
+
   );
 };
