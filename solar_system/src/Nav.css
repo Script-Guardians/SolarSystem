@@ -1,5 +1,6 @@
 .nav-container {
     display: flex;
+<<<<<<< HEAD
     justify-content: right;
     padding: 10px 20px; /* Adjust the padding as needed */
     background-color: #000000;
@@ -19,3 +20,28 @@
     text-decoration: underline;
   }
   
+=======
+    align-items: center;
+    height: 60px;
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .nav-links a {
+    margin-right: 10px;
+    text-decoration:none;
+    color: #475ca2;
+  }
+  
+  .popout-toggle {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+>>>>>>> 9dca86bed8d1b4cd828cbacbfded871f742f7aa1
