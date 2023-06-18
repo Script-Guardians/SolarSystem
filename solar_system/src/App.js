@@ -9,19 +9,12 @@ import { Jupiter } from './Pages/Jupiter';
 import { Saturn } from './Pages/Saturn';
 import { Uranus } from './Pages/Uranus';
 import { Neptune } from './Pages/Neptune';
-<<<<<<< HEAD
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-// import { Nav } from './Nav';
+import { Nav } from './Nav';
 import {Header} from './Header';
 import { Footer } from './Footer';
-import './App.css'
-
-=======
-import { Nav } from './Nav';
 import './App.css';
 import { PopoutWindow } from './PopoutWindow';
->>>>>>> 9dca86bed8d1b4cd828cbacbfded871f742f7aa1
 
 const App = () => {
   const pages = [
@@ -50,28 +43,8 @@ const App = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="app">
-        <BrowserRouter>
-        <Header />
-        {/* <Nav /> */}
-          <Routes>
-            <Route path= "/" exact={true} element={<SolarSystem />}/>
-            <Route path= "/venus" exact={true} element={<Venus />}/>
-            <Route path= "/mercury" exact={true} element={<Mercury />}/>
-            <Route path= "/earth" exact={true} element={<Earth/>}/>
-            <Route path= "/mars" exact={true} element={<Mars />}/>
-            <Route path= "/jupiter" exact={true} element={<Jupiter />}/>
-            <Route path= "/saturn" exact={true} element={<Saturn />}/>
-            <Route path= "/uranus" exact={true} element={<Uranus/>}/>
-            <Route path= "/neptune" exact={true} element={<Neptune />}/>
-          </Routes> 
-          <Footer />
-        </BrowserRouter> 
-      
-    </div>
-=======
     <Router>
+      <Header />
       <div className="app">
         <Nav pages={pages} onLinkClick={handleLinkClick} />
         <div className="content">
@@ -101,8 +74,8 @@ const App = () => {
           <Route path="/neptune" element={<Neptune />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
->>>>>>> 9dca86bed8d1b4cd828cbacbfded871f742f7aa1
   );
 };
 
