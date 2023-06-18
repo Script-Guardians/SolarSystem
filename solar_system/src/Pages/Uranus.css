@@ -29,3 +29,11 @@ p {
   flex-direction: column;
   justify-content: space-around;
 }
+
+a::link{
+  color: white;
+}
+
+a:visited{
+  color: rgb(186, 161, 210);
+}

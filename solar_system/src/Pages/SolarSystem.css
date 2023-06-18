@@ -1,14 +1,14 @@
 @media screen {
-  
-.solar-system {
-  padding: 5%;
-  max-width: 100%;
-  max-height: 100%;
-  width: 32rem;
-  height: 32rem;
-  margin: 0 auto;
+  .solar-system {
+    padding: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 32rem;
+    height: 32rem;
+    margin: 0 auto;
+  }
 }
-}
+
 .loading {
   color: aliceblue;
   font-size: larger;
@@ -29,17 +29,17 @@
   padding: 20%;
 }
 
-    .planet:after {
-  content: '';
-
+.planet:after {
+  content: "";
   border-radius: 100%;
   position: absolute;
 }
+
 .sun {
   position: absolute;
   width: 70%;
   height: 70%;
-  background-image: url(/public/sun.png); 
+  background-image: url(../images/sun.png);
 
   background-size: cover;
   border-radius: 50%;
@@ -53,11 +53,12 @@
   height: 50%;
   animation-duration: 250s;
 }
+
 .mercury:after {
   width: 1.5rem;
   height: 1.5rem;
   top: -10px;
-  background-image: url(/public/mercury.png);
+  background-image: url(../images/mercury.png);
   background-size: cover;
 }
 
@@ -73,8 +74,7 @@
   width: 1.5rem;
   height: 1.5rem;
   top: -14px;
-  background-image: url(/public/venus.png);
-
+  background-image: url(../images/venus.png);
   background-size: cover;
 }
 
@@ -90,8 +90,7 @@
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(/public/earth.png);
-
+  background-image: url(../images/earth.png);
   background-size: cover;
 }
 
@@ -102,15 +101,15 @@
   height: 65%;
   animation-duration: 30s;
 }
+
 .mars:after {
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(/public/mars.png);
-
+  background-image: url(../images/mars.png);
   background-size: cover;
-  
 }
+
 .jupiter {
   position: absolute;
   padding: 7%;
@@ -118,11 +117,12 @@
   height: 70%;
   animation-duration: 27s;
 }
+
 .jupiter:after {
   width: 2rem;
   height: 2rem;
   top: -15px;
-  background-image: url(/public/jupiter.png);
+  background-image: url(../images/jupiter.png);
 
   background-size: cover;
 }
@@ -134,14 +134,16 @@
   height: 75%;
   animation-duration: 22s;
 }
+
 .saturn:after {
   width: 1.3rem;
   height: 1.3rem;
   top: -10px;
-  background-image: url(/public/saturn.png);
+  background-image: url(../images/saturn.png);
 
   background-size: cover;
 }
+
 .uranus {
   position: absolute;
   padding: 3%;
@@ -149,15 +151,15 @@
   height: 75%;
   animation-duration: 18s;
 }
+
 .uranus:after {
   width: 2rem;
   height: 2rem;
   top: -15px;
   background-image: url(../images/uranus.png);
-
-
   background-size: cover;
 }
+
 .neptune {
   padding: 2%;
   width: 100%;
@@ -169,8 +171,7 @@
   width: 2rem;
   height: 2rem;
   top: -15px;
-  /* background-image: url(/public/neptune.png); */
-
+  background-image: url(../images/neptune.png);
   background-size: cover;
 }
 
@@ -183,13 +184,12 @@
   }
 }
 
-
 .planet-info {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color:  rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -201,11 +201,9 @@
   font-size: 24px;
   margin-bottom: 10px;
   color: beige;
-  
 }
 
 .planet-info p {
   font-size: 16px;
   color: whitesmoke;
 }
-

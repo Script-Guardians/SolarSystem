@@ -24,3 +24,11 @@ img {
   flex-direction: column;
   justify-content: space-around;
 }
+
+a::before{
+  color: white;
+}
+
+a:visited{
+  color: rgb(186, 161, 210);
+}
