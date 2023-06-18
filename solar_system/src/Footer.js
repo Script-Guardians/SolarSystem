@@ -22,6 +22,7 @@ export const Footer = () => {
               <li><a href="#faq">FAQ</a></li>
 
             </ul>
+
           </div>
           <div className="col-md-4">
             <h5>Follow Us</h5>
@@ -41,6 +42,7 @@ export const Footer = () => {
                   <i className="fab fa-instagram"></i>
                 </a>
               </li>
+              
             </ul>
           </div>
         </div>
