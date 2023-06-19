@@ -124,7 +124,6 @@ html {
   display: flex;
   justify-content: center;
   position: absolute;
-
   transform: translate(65%, 65%);
   font-size: 2rem;
   font-weight: bold;
