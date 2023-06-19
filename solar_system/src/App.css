@@ -6,7 +6,7 @@ html {
   background-repeat: no-repeat;
   text-align:center;
   align-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .app {

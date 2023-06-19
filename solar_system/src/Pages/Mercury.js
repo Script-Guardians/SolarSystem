@@ -46,6 +46,7 @@ export const Mercury = () => {
           <p className="property">
             Distance (Light Years): {planets[0].distance_light_year}
           </p>
+          <p className="property">Orbital Period: {planets[0].period}</p>
           <p className="property">Temperature: {planets[0].temperature}</p>
           <p className="property">Gravity: {bodies.gravity}</p>
           <p className="property">Density: {bodies.density}</p>
