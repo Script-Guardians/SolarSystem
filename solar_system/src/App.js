@@ -12,6 +12,8 @@ import { Neptune } from './Pages/Neptune';
 import { Pluto } from './Pages/Pluto';
 import { Footer } from './Footer';
 import { Nav } from './Nav';
+import { Gallery } from './Pages/Gallery';
+// import { About } from './Pages/About';
 import { PopoutWindow } from './PopoutWindow';
 import './App.css';
 
@@ -62,7 +64,6 @@ const App = () => {
           )}
           <div className="solarSystem-page">
             <SolarSystem />
-            
           </div>
         </div>
         <Routes>
@@ -75,11 +76,13 @@ const App = () => {
           <Route path="/uranus" element={<Uranus />} />
           <Route path="/neptune" element={<Neptune />} />
           <Route path="/pluto" element={<Pluto />} />
+          <Route path="/gallery" element={<Gallery />} />
+          {/* <Route path="/about" element={<About />} /> */}
         </Routes>
       </div>
 
       <div className='footer'>
-      <Footer /> 
+        <Footer /> 
       </div>
     </Router>
   );

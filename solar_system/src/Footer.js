@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "@fortawesome/fontawesome-free/js/all.min.js";
 
@@ -22,7 +23,7 @@ export const Footer = () => {
             <h5>Resources</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#faq">FAQ</a>
+                <Link to="./gallery">Image Gallery</Link>
               </li>
             </ul>
           </div>
