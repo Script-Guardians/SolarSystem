@@ -8,12 +8,11 @@ export const Footer = () => {
   return (
     <footer className="footer">
         <div className="box1">
-
             <div className="col-md-4">
                 <h5>Company</h5>
              <ul className="list-unstyled">
                 <li>
-                    <a href="#contact">About Us</a>
+                    <a href="./about">About Us</a>
                 </li>
              </ul>
             </ div>
@@ -26,7 +25,7 @@ export const Footer = () => {
                 <Link to="./gallery">Image Gallery</Link>
               </li>
             </ul>
-          </div>
+        </div>
 
         <div className="box3">
             <h5>Follow Us</h5>
