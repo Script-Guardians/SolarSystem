@@ -54,7 +54,7 @@ export const Venus = () => {
         <p className="property"><b>Temperature:</b> {planets[0].temperature}</p>
         <p className="property"><b>Gravity:</b> {bodies.gravity}</p>
         <p className="property"><b>Density:</b> {bodies.density}</p>
-        <p className="property"><b>Discovery Date:</b> {bodies.discoveryDate}</p>
+        <p className="property"><b>Radius:</b> {planets[0].radius}</p>
         <p className="read-more">
           <a href="https://solarsystem.nasa.gov/planets/venus/overview/">
             READ MORE

@@ -71,12 +71,10 @@ const SolarSystem = () => {
       {planetInfo && (
         <div className="planet-info">
           <h2>{planetInfo.englishName}</h2>
-          <p><b>Gravity:</b> {planetInfo.gravity}</p>
-          <p><b>Density:</b>  {planetInfo.density}</p>
           <p><b>Mass:</b>  {planetInfo.mass.massValue}</p>
-          <p><b>Discovery Date:</b>  {planetInfo.discoveryDate}</p>
-          <p><b>Dimension:</b>  {planetInfo.dimension}</p>
-          <p><b>Discovered By:</b>  {planetInfo.discoveredBy}</p>
+          <p><b>Average Temp:</b>  {planetInfo.avgTemp}</p>
+          <p><b>Density:</b>  {planetInfo.density}</p>
+          <p><b>Gravity:</b> {planetInfo.gravity}</p>
         </div>
       )}
     </div>

@@ -45,15 +45,15 @@ export const Saturn = () => {
           Saturn is unique in our solar system. The other giant planets <br/>  
           have rings, but none are as spectacular as Saturn's.
         </p>
+        <p className="property"><b>Orbital Period:</b> {planets[0].period}</p>
+        <p className="property"><b>Radius:</b> {planets[0].radius}</p>
         <p className="property"><b>Mass:</b> {planets[0].mass}</p>
         <p className="property">
-          <b>Distance (Light Years):</b> {planets[0].distance_light_year}
+        <b>Distance (Light Years):</b> {planets[0].distance_light_year}
         </p>
-        <p className="property"><b>Orbital Period:</b> {planets[0].period}</p>
         <p className="property"><b>Temperature:</b> {planets[0].temperature}</p>
         <p className="property"><b>Gravity:</b> {bodies.gravity}</p>
         <p className="property"><b>Density:</b> {bodies.density}</p>
-        <p className="property"><b>Discovery Date:</b> {bodies.discoveryDate}</p>
         <p className="read-more">
           <a href="https://solarsystem.nasa.gov/planets/saturn/overview/">
             READ MORE
