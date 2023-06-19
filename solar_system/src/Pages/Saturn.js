@@ -45,15 +45,15 @@ export const Saturn = () => {
           Saturn is unique in our solar system. The other giant planets <br/>  
           have rings, but none are as spectacular as Saturn's.
         </p>
-        <p className="property"><b>Orbital Period:</b> {planets[0].period}</p>
-        <p className="property"><b>Radius:</b> {planets[0].radius}</p>
-        <p className="property"><b>Mass:</b> {planets[0].mass}</p>
+        <p className="property"><b>Orbital Period:</b> {planets[0].period} Earth Days</p>
+        <p className="property"><b>Radius:</b> {bodies.equaRadius} km</p>
+        <p className="property"><b>Mass:</b> {bodies.mass.massValue} * 10<sup>{bodies.mass.massExponent}</sup> kg</p>
         <p className="property">
-        <b>Distance (Light Years):</b> {planets[0].distance_light_year}
+        <b>Distances from Earth (Light Years):</b> {planets[0].distance_light_year} LY
         </p>
-        <p className="property"><b>Temperature:</b> {planets[0].temperature}</p>
-        <p className="property"><b>Gravity:</b> {bodies.gravity}</p>
-        <p className="property"><b>Density:</b> {bodies.density}</p>
+        <p className="property"><b>Temperature:</b> {planets[0].temperature} K</p>
+        <p className="property"><b>Gravity:</b> {bodies.gravity} m/s<sup>2</sup></p>
+        <p className="property"><b>Density:</b> {bodies.density} g/cm<sup>3</sup></p>
         <p className="read-more">
           <a href="https://solarsystem.nasa.gov/planets/saturn/overview/">
             READ MORE

@@ -71,10 +71,10 @@ const SolarSystem = () => {
       {planetInfo && (
         <div className="planet-info">
           <h2>{planetInfo.englishName}</h2>
-          <p><b>Mass:</b>  {planetInfo.mass.massValue}</p>
-          <p><b>Average Temp:</b>  {planetInfo.avgTemp}</p>
-          <p><b>Density:</b>  {planetInfo.density}</p>
-          <p><b>Gravity:</b> {planetInfo.gravity}</p>
+          <p><b>Mass:</b>  {planetInfo.mass.massValue} * 10<sup>{planetInfo.mass.massExponent}</sup> kg</p>
+          <p><b>Average Temp:</b>  {planetInfo.avgTemp} K</p>
+          <p><b>Density:</b>  {planetInfo.density} g/cm<sup>3</sup></p>
+          <p><b>Gravity:</b> {planetInfo.gravity} m/s<sup>2</sup></p>
         </div>
       )}
     </div>

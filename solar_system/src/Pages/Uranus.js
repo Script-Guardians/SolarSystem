@@ -45,20 +45,20 @@ export const Uranus = () => {
         90-degree angle from the plane of its orbit. This unique <br />
         tilt makes Uranus appear to spin on its side.
       </p>
-        <p className="property"><b>Orbital Period:</b> {planets[0].period}</p>
-        <p className="property"><b>Radius:</b> {planets[0].radius}</p>
-        <p className="property"><b>Mass:</b> {planets[0].mass}</p>
+        <p className="property"><b>Orbital Period:</b> {planets[0].period} Earth Days</p>
+        <p className="property"><b>Radius:</b> {bodies.equaRadius} km</p>
+        <p className="property"><b>Mass:</b> {bodies.mass.massValue} * 10<sup>{bodies.mass.massExponent}</sup> kg</p>
         <p className="property">
-        <b>Distance (Light Years):</b> {planets[0].distance_light_year}
-        </p>
-        <p className="property"><b>Temperature:</b> {planets[0].temperature}</p>
-        <p className="property"><b>Gravity:</b> {bodies.gravity}</p>
-        <p className="property"><b>Density:</b> {bodies.density}</p>
-      <p className="read-more">
-        <a href="https://solarsystem.nasa.gov/planets/uranus/overview/">
-          READ MORE
-        </a>
+        <b>Distances from Earth (Light Years):</b> {planets[0].distance_light_year} LY
       </p>
+        <p className="property"><b>Temperature:</b> {planets[0].temperature} K</p>
+        <p className="property"><b>Gravity:</b> {bodies.gravity} m/s<sup>2</sup></p>
+        <p className="property"><b>Density:</b> {bodies.density} g/cm<sup>3</sup></p>
+        <p className="read-more">
+          <a href="https://solarsystem.nasa.gov/planets/uranus/overview/">
+            READ MORE
+          </a>
+        </p>
     </div>
 
   );
