@@ -9,6 +9,7 @@ import { Jupiter } from './Pages/Jupiter';
 import { Saturn } from './Pages/Saturn';
 import { Uranus } from './Pages/Uranus';
 import { Neptune } from './Pages/Neptune';
+import { Pluto } from './Pages/Pluto';
 import { Footer } from './Footer';
 import { Nav } from './Nav';
 import { PopoutWindow } from './PopoutWindow';
@@ -26,6 +27,7 @@ const App = () => {
     { name: 'Saturn', path: '/saturn' },
     { name: 'Uranus', path: '/uranus' },
     { name: 'Neptune', path: '/neptune' },
+    { name: 'Pluto', path: '/pluto' },
   ];
 
   const [isPopoutOpen, setPopoutOpen] = useState(false);
@@ -72,6 +74,7 @@ const App = () => {
           <Route path="/saturn" element={<Saturn />} />
           <Route path="/uranus" element={<Uranus />} />
           <Route path="/neptune" element={<Neptune />} />
+          <Route path="/pluto" element={<Pluto />} />
         </Routes>
       </div>
 

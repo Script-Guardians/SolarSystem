@@ -10,7 +10,6 @@ html {
   height: 200vh;
 }
 
-@media screen {
 .app {
   display: flex;
   flex-direction: row;
@@ -19,10 +18,8 @@ html {
   text-align:center;
   flex-grow: 1;
   overflow: hidden;
-
 }
   
-
 .venus-page{
   position: absolute;
   transform: translate(10%, 12%);
@@ -94,6 +91,14 @@ html {
   width: 100;
   height: 100;
 } 
+.pluto-page{
+  position: absolute;
+  transform: translate(10%, 12%);
+  top: 0;
+  left: 0;
+  width: 100;
+  height: 100;
+} 
 
 .popoutWindow {
   flex: 1;
@@ -135,5 +140,4 @@ html {
   padding: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
-}
 }

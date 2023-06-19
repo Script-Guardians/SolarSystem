@@ -34,7 +34,11 @@ export const Mercury = () => {
 
   return (
     <div className="mercury-page">
-      <img src={logo} className="mercury-image" alt="mercury-logo" />
+      <img 
+        src={logo} 
+        className="mercury-image" 
+        alt="mercury-logo" 
+        />
       <div className="mercury-info">
         <h1 className="title">{planets[0].name}</h1>
           <p>
