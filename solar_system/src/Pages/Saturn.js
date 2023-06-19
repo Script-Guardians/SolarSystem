@@ -33,8 +33,11 @@ export const Saturn = () => {
 
   return (
     <div className="saturn-page">
-        <img src="https://images.unsplash.com/photo-1639548206755-b20081a7cadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" 
-        className="saturn-image" alt="saturn-logo" />
+        <img 
+          src="https://images.unsplash.com/photo-1639548206755-b20081a7cadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80" 
+          className="saturn-image" 
+          alt="saturn-logo" 
+        />
       <div className="saturn-info">
         <h1 className="title">{planets[0].name}</h1>
         <p>
@@ -42,7 +45,6 @@ export const Saturn = () => {
           Saturn is unique in our solar system. The other giant planets <br/>  
           have rings, but none are as spectacular as Saturn's.
         </p>
-
         <p className="property">Mass: {planets[0].mass}</p>
         <p className="property">
           Distance (Light Years): {planets[0].distance_light_year}
@@ -59,6 +61,5 @@ export const Saturn = () => {
         </p>
       </div>
     </div>
-    //comment
   );
 };

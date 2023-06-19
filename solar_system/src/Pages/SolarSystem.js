@@ -1,7 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SolarSystem.css";
 
 const SolarSystem = () => {
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  
   const [planetInfo, setPlanetInfo] = useState(null);
   
   const fetchPlanetInfo = async (id) => {
@@ -31,6 +43,7 @@ const SolarSystem = () => {
   return (
     <div class="solar-system">
       <div className="planet neptune">
+        {renderPlanet("neptune")}
         <div className="planet uranus">
           {renderPlanet("uranus")}
           <div className="planet saturn">
@@ -54,15 +67,16 @@ const SolarSystem = () => {
           </div>
         </div>
       </div>
+      <div className="clock">{currentTime.toLocaleTimeString()}</div>
       {planetInfo && (
         <div className="planet-info">
           <h2>{planetInfo.englishName}</h2>
-          <p>Gravity:{planetInfo.gravity}</p>
-          <p>Density:{planetInfo.density}</p>
-          <p>Mass:{planetInfo.mass.massValue}</p>
-          <p>Discovery Date:{planetInfo.discoveryDate}</p>
-          <p>dimension:{planetInfo.dimension}</p>
-          <p>Discovered By:{planetInfo.discoveredBy}</p>
+          <p><b>Gravity:</b> {planetInfo.gravity}</p>
+          <p><b>Density:</b>  {planetInfo.density}</p>
+          <p><b>Mass:</b>  {planetInfo.mass.massValue}</p>
+          <p><b>Discovery Date:</b>  {planetInfo.discoveryDate}</p>
+          <p><b>Dimension:</b>  {planetInfo.dimension}</p>
+          <p><b>Discovered By:</b>  {planetInfo.discoveredBy}</p>
         </div>
       )}
     </div>

@@ -46,7 +46,6 @@ export const Earth = () => {
           <br />
           solar system with liquid water on the surface.
         </p>
-
         <p className="property">Mass: {planets[0].mass}</p>
         <p className="property">
           Distance (Light Years): {planets[0].distance_light_year}

@@ -185,16 +185,26 @@
 }
 
 .planet-info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.65);
+  transform: translate(50%, -50%);
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  max-width: 100%;
   text-align: center;
+  width: 15rem;
+  border-radius: 1rem;
+}
+
+.planet-info:hover {
+  /* Show the tooltip on hover */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .planet-info h2 {

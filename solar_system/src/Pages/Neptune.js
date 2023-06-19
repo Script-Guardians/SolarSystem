@@ -39,26 +39,26 @@ export const Neptune = () => {
         alt="neptune-logo"
       />
       <div className="neptune-info"></div>
-      <h1 className="title">{planets[0].name}</h1>
-      <p>
-        Neptune, the eighth and most distant major planet orbiting <br/>
-        our Sun is dark, cold and whipped by supersonic winds. It was <br/>
-        the first planet located through mathematical calculations, <br/> 
-        rather than by telescope.
-      </p>
-      <p className="property">Mass: {planets[0].mass}</p>
-      <p className="property">
-        Distance (Light Years): {planets[0].distance_light_year}
-      </p>
-      <p className="property">Orbital Period: {planets[0].period}</p>
-      <p className="property">Temperature: {planets[0].temperature}</p>
-      <p className="property">Gravity: {bodies.gravity}</p>
-      <p className="property">Density: {bodies.density}</p>
-      <p className="property">Discovery Date: {bodies.discoveryDate}</p>
-      <p className="read-more">
-        <a href="https://solarsystem.nasa.gov/planets/neptune/overview/">
-          READ MORE
-        </a>
+        <h1 className="title">{planets[0].name}</h1>
+        <p>
+          Neptune, the eighth and most distant major planet orbiting <br/>
+          our Sun is dark, cold and whipped by supersonic winds. It was <br/>
+          the first planet located through mathematical calculations, <br/> 
+          rather than by telescope.
+        </p>
+        <p className="property">Mass: {planets[0].mass}</p>
+        <p className="property">
+          Distance (Light Years): {planets[0].distance_light_year}
+        </p>
+        <p className="property">Orbital Period: {planets[0].period}</p>
+        <p className="property">Temperature: {planets[0].temperature}</p>
+        <p className="property">Gravity: {bodies.gravity}</p>
+        <p className="property">Density: {bodies.density}</p>
+        <p className="property">Discovery Date: {bodies.discoveryDate}</p>
+        <p className="read-more">
+          <a href="https://solarsystem.nasa.gov/planets/neptune/overview/">
+            READ MORE
+          </a>
       </p>
     </div>
   );

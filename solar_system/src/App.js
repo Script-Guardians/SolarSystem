@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SolarSystem from './Pages/SolarSystem';
 import { Mercury } from './Pages/Mercury';
@@ -9,22 +9,12 @@ import { Jupiter } from './Pages/Jupiter';
 import { Saturn } from './Pages/Saturn';
 import { Uranus } from './Pages/Uranus';
 import { Neptune } from './Pages/Neptune';
+import { Footer } from './Footer';
 import { Nav } from './Nav';
-import './App.css';
 import { PopoutWindow } from './PopoutWindow';
+import './App.css';
 
 const App = () => {
-  const [currentTime, setCurrentTime] = useState(new Date());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
 
   const pages = [
     { name: 'Solar System', path: '/' },
@@ -70,6 +60,7 @@ const App = () => {
           )}
           <div className="solarSystem-page">
             <SolarSystem />
+            
           </div>
         </div>
         <Routes>
@@ -83,9 +74,11 @@ const App = () => {
           <Route path="/neptune" element={<Neptune />} />
         </Routes>
       </div>
-      <div className="clock">{currentTime.toLocaleTimeString()}</div> 
+
+      <div className='footer'>
+      <Footer /> 
+      </div>
     </Router>
-    
   );
 };
 
