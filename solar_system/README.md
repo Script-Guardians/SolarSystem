@@ -1,19 +1,68 @@
-# Getting Started with Create React App
+Welcome the Solar System App by Script Guardians! This is a simple guide on how to launch and run the app using server.js and npm start.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Prerequisites**
+Before getting started, make sure you have the following installed on your machine:
 
-## Available Scripts
+    Node.js: Download and Install Node.js
+    Git: Download and Install Git
 
-In the project directory, you can run:
+**Installation**
+    Clone the repository:
+    bash
 
-### `npm start`
+git clone https://github.com/your-username/myapp.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Navigate to the project directory:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+cd myapp
 
+**Install the dependencies:**
+nmp i axios express node cors
+nmp install font-awesome
+nmp install bootstrap
+
+bash
+    npm install
+
+**Launching the Server**
+To launch the server, follow these steps:
+    Open a terminal and navigate to the project directory if you're not already there.
+    
+**Start the server using server.js:**
+    bash
+    nodemon server.js
+
+This command will start the server and listen for incoming requests.
+Once the server is running, you should see the following message in the terminal:
+
+**Launching the App**
+
+To launch the app, follow these steps:
+    Open a new terminal.
+    Navigate to the project directory if you're not already there.
+   
+**Start the app using npm start:**
+
+    bash
+    npm start
+    This command will build and launch the app.
+
+**Once the app is running, you should see the following message in the terminal:**
+    Starting the app...
+    App is running on http://localhost:8080
+
+    This means that the app is up and running on http://localhost:8080.
+    Open your web browser and visit http://localhost:8080 to see the app in action.
+
+**Conclusion**
+
+Congratulations! You have successfully launched and run SolarSystem App using server.js and npm start. You can now explore the app.
+
+If you have any issues or questions, please feel free to reach out. Enjoy using our app!
+
+
+**8More info:**
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -39,32 +88,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
