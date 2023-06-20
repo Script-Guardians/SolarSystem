@@ -18,6 +18,8 @@ html {
   text-align:center;
   flex-grow: 1;
   overflow: hidden;
+  height:fit-content;
+  padding-bottom: 10rem;
 }
   
 .venus-page{
@@ -125,6 +127,7 @@ html {
   transform: translate(0%, 20%);
   flex: 2;
   height:100vh;
+  z-index: 1;
 }
 
 .clock {
@@ -144,9 +147,19 @@ html {
 }
 
 .planet-gallery{
-  transform: translate(-5%, 12%);
+  position: relative;
+  transform: translate(-5%, 10%);
   width: 40%;
   height: 40%;
+  max-width: 50%;
+  max-height:  50%;
+}
+
+.aboutus-gallery{
+  position: relative;
+  transform: translate(-5%, 10%);
+  width: 50%;
+  height: 50%;
   max-width: 50%;
   max-height:  50%;
 }

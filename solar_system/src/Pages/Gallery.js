@@ -4,6 +4,7 @@ import './Gallery.css';
 export const Gallery = () => {
     return (
       <div className="planet-gallery">
+        <h1>Image Gallery</h1>
         <div className="planet-grid">
           <div className="planet-item">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/640px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg" alt="Neptune" />
